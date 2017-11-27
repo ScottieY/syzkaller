@@ -109,7 +109,7 @@ GITREV=$(shell git rev-parse HEAD)
 ifeq ($(`git diff --shortstat`), "")
 	REV=$(GITREV)
 else
-	REV=$(GITREV)+
+	REV=$(GITREV)
 endif
 
 NOSTATIC ?= 0
